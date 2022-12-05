@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const User = require('./model');
 
 function upsertUser(userObj) {
-// mongoose.connect('mongodb://root:206320xl@124.222.211.33:27017/demo');
-  const DB_URL = 'mongodb://root:206320xl@124.222.211.33:27017/demo';
+
+  const DB_URL = '/demo';
   if (mongoose.connection.readyState == 0) {
     mongoose.connect(DB_URL);
   }
